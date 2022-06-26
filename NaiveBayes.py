@@ -28,7 +28,7 @@ for column in df.columns:
     temp_new = le.fit_transform(df[column].astype('category'))
     df.drop(labels=[column], axis="columns", inplace=True)
     df[column] = temp_new
-feature_col_names = ['Age','sex','height','weight','QRS_duration','P-R_interval','Q-T_interval','T_interval','P_interval','QRS','T','P','QRST','J','HR','DI_Q_wave','DI_R_wave','DI_S_wave','DI_R`_wave','DI_S`_wave']
+feature_col_names = ['Age','sex','height','weight','QRS_duration','P_R_interval','Q_T_interval','T_interval','P_interval','QRS','T','P','QRST','J','HR','DI_Q_wave','DI_R_wave','DI_S_wave','DI_R`_wave','DI_S`_wave']
 predicted_class_names = ['Result']
 
 X = df[feature_col_names].values # these are factors for the prediction
@@ -90,7 +90,7 @@ print(accuracy_score(ytest, y_ppred,normalize=False))
 
 
 
-def predict_note_authentication(Age,sex,height,weight,QRS_duration,P-R_interval,Q-T_interval,T_interval,P_interval,QRS,T,P,QRST,J,HR,DI_Q_wave,DI_R_wave,DI_S_wave,DI_R`_wave,DI_S`_wave):
+def predict_note_authentication(Age,sex,height,weight,QRS_duration,P_R_interval,Q_T_interval,T_interval,P_interval,QRS,T,P,QRST,J,HR,DI_Q_wave,DI_R_wave,DI_S_wave,DI_R`_wave,DI_S`_wave):
     
     """Let's Authenticate the Banks Note 
     This is using docstrings for specifications.
@@ -116,11 +116,11 @@ def predict_note_authentication(Age,sex,height,weight,QRS_duration,P-R_interval,
         in: QRS_duration
         type: number
         required: true
-      - name: P-R_interval
+      - name: P_R_interval
         in: query
         type: number
         required: true
-      - name: Q-T_interval
+      - name: Q_T_interval
         in: query
         type: number
         required: true
