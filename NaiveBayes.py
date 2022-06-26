@@ -164,11 +164,11 @@ def predict_note_authentication(Age,sex,height,weight,QRS_duration,P_R_interval,
         in: query
         type: number
         required: true
-      - name: DI_R`_wave
+      - name: DI_R__wave
         in: query
         type: number
         required: true
-      - name: DI_S`_wave
+      - name: DI_S__wave
         in: query
         type: number
         required: true
