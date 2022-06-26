@@ -210,8 +210,8 @@ def main():
     DI_Q_wave = st.text_input("DI_Q_wave","Type Here")
     DI_R_wave = st.text_input("DI_R_wave","Type Here")
     DI_S_wave = st.text_input("DI_S_wave","Type Here")
-    DI_R`_wave = st.text_input("DI_R`_wave","Type Here")
-    DI_S`_wave = st.text_input("DI_S`_wave","Type Here")
+    DI_R__wave = st.text_input("DI_R__wave","Type Here")
+    DI_S__wave = st.text_input("DI_S__wave","Type Here")
     result=""
     if st.button("Predict"):
         result=predict_note_authentication(Age,sex,height,weight,QRS_duration,P-R_interval,Q-T_interval,T_interval,P_interval,QRS,T,P,QRST,J,HR,DI_Q_wave,DI_R_wave,DI_S_wave,DI_R`_wave,DI_S`_wave)
